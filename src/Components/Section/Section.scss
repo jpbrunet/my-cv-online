@@ -1,0 +1,16 @@
+@import "../Config";
+
+.mainSection {
+  box-shadow: -5px 5px 8px #191919,
+  5px -5px 8px #292929;
+  padding: .5em;
+
+  color: $white-color !important;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Audiowide', "Arial Black", sans-serif;
+    text-transform: uppercase;
+    color: $orange-color;
+  }
+
+}

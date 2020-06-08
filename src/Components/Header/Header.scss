@@ -1,0 +1,82 @@
+@import "../Config";
+
+header {
+  text-transform: uppercase;
+  font-family: 'Audiowide', "Arial Black", sans-serif;
+  line-height: 1.1;
+  margin-bottom: 2em;
+  height: 90vh;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  .mastHead {
+    height: 30%;
+    width: 50vw;
+  }
+
+  .nameHeader, .headInfo {
+    color: $white-color;
+  }
+
+  .city, h1 {
+    color: $orange-color;
+  }
+
+  .scrolling {
+    overflow-y: auto;
+  }
+
+  .city {
+    writing-mode: vertical-lr;
+  }
+
+
+  @media screen and (min-width: 601px) {
+    .nameHeader {
+      font-size: 4.3vw !important;
+      letter-spacing: 0.42vw;
+    }
+
+    h1 {
+      font-size: 1.8vw !important;
+      letter-spacing: 0.03vw;
+    }
+
+    .city {
+      font-size: 2.1vw !important;
+    }
+
+    .headInfo {
+      font-size: 1.8vw !important;
+      text-align: right;
+      padding-right: 0.5vw !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 1vh 1vw;
+
+    .nameHeader {
+      font-size: 9.1vw !important;
+      letter-spacing: 0.32vw;
+    }
+
+    h1 {
+      font-size: 6vw !important;
+      letter-spacing: 1.65vw;
+      text-align: center !important;
+    }
+
+    .city {
+      font-size: 4.5vw !important;
+    }
+
+    .headInfo {
+      font-size: 4vw !important;
+      text-align: right;
+      padding-right: 0.5vw;
+    }
+  }
+
+}
